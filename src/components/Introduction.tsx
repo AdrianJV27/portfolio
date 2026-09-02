@@ -16,7 +16,7 @@ export function Introduction() {
         
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a href="#proyectos" className="px-6 py-3 rounded-xl bg-teal-400 text-slate-950 font-semibold text-sm hover:bg-teal-300 transition-all shadow-lg shadow-teal-400/10">
-                  Ver Proyectos
+                  Look my projects!
                 </a>
                 <a href="https://github.com/AdrianJV27" target="_blank" className="p-3 rounded-xl border border-slate-800 bg-slate-800/50 hover:bg-slate-800 text-slate-300 hover:text-white transition-colors">
                   <FaGithub/>
