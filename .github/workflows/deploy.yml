@@ -2,9 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Se ejecuta cada vez que subes cambios a la rama main
+    branches: ["main"]
 
-# Permisos necesarios para publicar en GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -21,17 +20,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout código
+      - name: Checkout código
         uses: actions/checkout@v4
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
       - name: Instalar dependencias
-        run: npm ci
+        run: npm install
 
       - name: Construir proyecto (Build)
         run: npm run build
@@ -39,10 +38,10 @@ jobs:
       - name: Configurar Pages
         uses: actions/configure-pages@v4
 
-      - name: Subir artefacto de construcción
+      - name: Subir artefacto de construcción
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Carpeta de salida de Vite (cambia a 'build' si usas Create React App)
+          path: './dist'
 
       - name: Desplegar en GitHub Pages
         id: deployment
