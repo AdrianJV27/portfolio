@@ -36,20 +36,20 @@ export function AboutMe(){
     ]
 
     return (
-            <section id="sobre-mi" className="space-y-8">
+            <section id="about-me" className="space-y-8">
       <div className="space-y-2">
-        <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-3">
+        <h2 className="text-2xl font-bold  flex items-center gap-3">
           Technologies & tools
         </h2>
-        <p className="text-slate-400 text-sm">My tech stack</p>
+        <p className="text-sm">My tech stack</p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {
         technologies.map( (tech) => {
         return (
-        <div key={tech.id} className="p-4 rounded-xl bg-slate-800/40 border border-slate-800/80 flex items-center gap-3 hover:border-teal-400/40 transition-colors">
-            <span className=" font-semibold text-sm text-slate-200">
+        <div key={tech.id} className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
+            <span className=" font-semibold text-sm ">
                 <span>
                     <tech.icon/> {tech.label}
                 </span>
@@ -58,17 +58,17 @@ export function AboutMe(){
             )
         }
 
-        {/* <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-800/80 flex items-center gap-3 hover:border-teal-400/40 transition-colors">
-          <span className="font-semibold text-sm text-slate-200">Next.js</span>
+        {/* <div className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
+          <span className="font-semibold text-sm ">Next.js</span>
         </div>
-        <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-800/80 flex items-center gap-3 hover:border-teal-400/40 transition-colors">
-          <span className="font-semibold text-sm text-slate-200">Node.js</span>
+        <div className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
+          <span className="font-semibold text-sm ">Node.js</span>
         </div>
-        <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-800/80 flex items-center gap-3 hover:border-teal-400/40 transition-colors">
-          <span className="font-semibold text-sm text-slate-200">PostgreSQL</span>
+        <div className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
+          <span className="font-semibold text-sm ">PostgreSQL</span>
         </div>
-        <div className="p-4 rounded-xl bg-slate-800/40 border border-slate-800/80 flex items-center gap-3 hover:border-teal-400/40 transition-colors">
-          <span className="font-semibold text-sm text-slate-200">Tailwind CSS</span>
+        <div className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
+          <span className="font-semibold text-sm ">Tailwind CSS</span>
         </div> */}
       </div>
     </section>

@@ -9,12 +9,12 @@ export function Projects(){
     const filteredProjects = projectList.filter( ({category}) => category === currentActiveCategory || currentActiveCategory === CATEGORIES.ALL)
     
     return (
-    <section id="proyectos" className="space-y-8">
+    <section id="projects" className="space-y-8">
         <div className="space-y-2">
-            <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-3">
+            <h2 className="text-2xl font-bold  flex items-center gap-3">
                 Projects
             </h2>
-            <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+            <nav className="hidden md:flex items-center gap-8 text-sm font-medium ">
                 {
                     CATEGORY_TABS.map( (category) => {
                         const isActive = currentActiveCategory === category.id
