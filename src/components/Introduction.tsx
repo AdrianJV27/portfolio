@@ -31,7 +31,7 @@ export function Introduction() {
               </p>
         
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <a href="#proyectos" className="border-primary hover:text-main-bg hover:bg-primary border-2 px-6 py-3 rounded-xl font-semibold text-sm  transition-all shadow-lg shadow-teal-400/10">
+                <a href="#projects" className="border-primary hover:text-main-bg hover:bg-primary border-2 px-6 py-3 rounded-xl font-semibold text-sm  transition-all shadow-lg shadow-teal-400/10">
                   Look my projects!
                 </a>
                 <a href="https://github.com/AdrianJV27" target="_blank" className="hover:animate-pulse hover:text-main-bg hover:bg-primary p-3 rounded-xl border transition-colors">
