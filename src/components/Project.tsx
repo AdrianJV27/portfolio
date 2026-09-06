@@ -9,7 +9,7 @@ interface ProjectProps {
 
 export function Project({ title, link, description, category}: ProjectProps){
     return (<>
-    <article className="p-6 rounded-2xl border flex flex-col justify-between transition-all group">
+    <article className="p-6 rounded-2xl border flex flex-col justify-between transition-all group hover:text-primary">
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold px-2.5 py-1 rounded-md">{category}</span>

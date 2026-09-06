@@ -2,14 +2,14 @@
 
 :root{
   --text-color: #060a0e;
-  --background-color: #d5def1;
-  --primary-color: #29ffe6;
+  --background-color: #f8fafc;
+  --primary-color: #0f766e;
   --secondary-color: #030507;
   --accent-color: #0600c2;
 
 }
 
-.dark{
+html.dark{
   --text-color: #f1f5f9;
   --background-color: #0e172a;
   --primary-color: #00d6bd;
@@ -17,9 +17,18 @@
   --accent-color: #443dff;
 }
 
+@theme{
+  --color-main-text: var(--text-color);
+  --color-main-bg: var(--background-color);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-accent: var(--accent-color)
+}
+
 html {
   scroll-behavior: smooth;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: 0.5s;
 }
 

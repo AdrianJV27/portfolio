@@ -11,7 +11,7 @@ export function Projects(){
     return (
     <section id="projects" className="space-y-8">
         <div className="space-y-2">
-            <h2 className="text-2xl font-bold  flex items-center gap-3">
+            <h2 className="text-2xl font-bold flex items-center gap-3">
                 Projects
             </h2>
             <nav className="hidden md:flex items-center gap-8 text-sm font-medium ">
@@ -22,7 +22,7 @@ export function Projects(){
                             <button 
                                 key={category.id} 
                                 onClick={ () => setCurrentActiveCategory(category.id)}
-                                className={`hover:text-teal-400 transition-colors cursor-pointer ${ isActive && 'text-teal-400'}`}>
+                                className={`hover:text-primary transition-colors cursor-pointer ${ isActive && 'text-primary'}`}>
                                     {category.label}
                                 </button>
                         )

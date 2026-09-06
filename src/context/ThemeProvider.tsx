@@ -8,14 +8,17 @@ export function ThemeProvider({children}: {children: ReactNode}){
             return themeSaved
         }else if( window.matchMedia('(prefers-color-scheme: dark)').matches){
             return 'dark'
+        }else{
+            return 'light'
         }
-        return 'light'
     })
 
     useEffect(() => {
         if (theme === 'dark') {
+            localStorage.setItem('theme', 'dark')
             document.querySelector('html')?.classList.add('dark')
         }else{
+            localStorage.setItem('theme', 'light')
             document.querySelector('html')?.classList.remove('dark')
         }
 

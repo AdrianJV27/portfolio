@@ -48,8 +48,8 @@ export function AboutMe(){
         {
         technologies.map( (tech) => {
         return (
-        <div key={tech.id} className="p-4 rounded-xl  border  flex items-center gap-3  transition-colors">
-            <span className=" font-semibold text-sm ">
+        <div key={tech.id} className="p-4 rounded-xl border flex items-center gap-3  transition-colors hover:text-primary">
+            <span className="font-semibold text-sm ">
                 <span>
                     <tech.icon/> {tech.label}
                 </span>
