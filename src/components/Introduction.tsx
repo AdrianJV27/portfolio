@@ -19,7 +19,7 @@ export function Introduction() {
             </div>
           </aside>
            <section className="flex flex-col items-start gap-6 max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-400/10 text-teal-400 border border-teal-400/20 text-xs font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-medium">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                 Available for new projects
               </div>

@@ -22,7 +22,7 @@ export function Projects(){
                             <button 
                                 key={category.id} 
                                 onClick={ () => setCurrentActiveCategory(category.id)}
-                                className={`hover:text-primary transition-colors cursor-pointer ${ isActive && 'text-primary'}`}>
+                                className={`hover:text-primary transition-colors cursor-pointer  ${ isActive && 'text-primary border-b-2 border-primary'}`}>
                                     {category.label}
                                 </button>
                         )

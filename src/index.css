@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root{
-  --text-color: #060a0e;
-  --background-color: #f8fafc;
-  --primary-color: #0f766e;
-  --secondary-color: #030507;
-  --accent-color: #0600c2;
+  --text-color: #222222;
+  --background-color: #ffffff;
+  --primary-color: #8000a4;
+  --secondary-color: #500059;
+  --accent-2563eb: #0600c2;
 
 }
 
@@ -22,7 +22,7 @@ html.dark{
   --color-main-bg: var(--background-color);
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
-  --color-accent: var(--accent-color)
+  --color-accent: var(--accent-color);
 }
 
 html {

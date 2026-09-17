@@ -12,7 +12,14 @@ export function Header(){
             <a href="#projects" className="transition-colors">Projects</a>
             <a href="#contact" className="transition-colors">Contact me</a>
           </nav>
-          <ThemeButton/>
+          <div className="flex gap-2">
+            <ThemeButton/>
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="mailto:adrianjjvv@gmail.com" className="border hover:bg-primary hover:text-main-bg inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all">
+                Contact me
+              </a>
+            </div>
+          </div>
         </div>
       </header>
       )
